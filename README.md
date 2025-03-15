@@ -10,4 +10,5 @@ To run this project, you’ll need:
 ->A compatible IDE (e.g., IntelliJ IDEA, Eclipse, or NetBeans) or the command line.
 
 **License**
+
 This project is licensed under the MIT License. You are free to use, modify, and distribute the code with proper attribution.
