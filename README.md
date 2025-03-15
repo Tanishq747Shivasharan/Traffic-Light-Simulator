@@ -4,6 +4,7 @@ Description: The Traffic Light Simulator is a Java-based graphical application c
 
 **Requirements**
 To run this project, you’ll need:
+
 ->Java Development Kit (JDK) version 8 or above.
 ->A compatible IDE (e.g., IntelliJ IDEA, Eclipse, or NetBeans) or the command line.
 
