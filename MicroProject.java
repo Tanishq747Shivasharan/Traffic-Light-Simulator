@@ -30,6 +30,7 @@ public class MicroProject extends JFrame {
 
         setSize(300,400);
         setLayout(new BorderLayout());
+        setVisible(true);
     }
 
     public static void main(String[] args){
