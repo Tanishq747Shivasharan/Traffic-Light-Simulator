@@ -15,20 +15,33 @@ public class MicroProject extends JFrame {
                 System.exit(0);
             }
         });
+        
+        // Light Panel (Traffic Light Display).
+        lightP = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                g.setColor(Color.BLACK);
+                g.fillRect(100, 50, 100, 300);
+
+                g.setColor(currentLight == Color.RED ? Color.RED : Color.DARK_GRAY);
+                g.fillOval(120, 70, 60, 60);
+            }
+        };
 
         JPanel bPanel = new JPanel();
         redb = new JButton("Red");
         yellowb = new JButton("yellow");
-        Greenb = new JButton("Green");
+        greenb = new JButton("Green");
 
-        // Traffic lights code goes here...
 
         // Adding the signal buttons to the frame.
         bPanel.add(redb);
         bPanel.add(yellowb);
         bPanel.add(greenb);
 
-        setSize(300,400);
+        add(lightP, BorderLayout.CENTER);
+        setSize(500,400);
         setLayout(new BorderLayout());
         setVisible(true);
     }
